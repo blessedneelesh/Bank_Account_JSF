@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:form>
+Account No:<h:inputText value="#{acc_to_edit.accountId}"></h:inputText><br/>
+Account Type:<h:inputText value="#{acc_to_edit.accountType}"></h:inputText><br/>
+Name:<h:inputText value="#{acc_to_edit.name}"></h:inputText><br/>
+Contact:<h:inputText value="#{acc_to_edit.contact}"></h:inputText><br/>
+Balance:<h:inputText value="#{acc_to_edit.balance}"></h:inputText><br/>
+Created Date:<h:inputText value="#{acc_to_edit.createdDate}"></h:inputText><br/>
+
+<h:commandButton action="#{ctr.updateRec(acc_to_edit)}" value="update"></h:commandButton>
+</h:form>
+
+</html>
